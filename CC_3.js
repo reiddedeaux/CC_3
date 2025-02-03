@@ -13,3 +13,16 @@ orders[2] += 5 ; //Increasing the third value in the array by 5
 let totalOrders = orders.reduce((total, quantity)=> total + quantity, 0); // Adding all the orders in the array to find the total
 console.log("New Orders:", orders); //logging the new array into the console
 console.log("Total Orders:", totalOrders); // logging the total amount of orders into the console
+
+//Task 3 Employee Performance Tracking
+
+let employee = {
+    name: "Ronnie 2K",  //name
+    role: "Digital Marketing Director",  // Role
+    performanceScore: 50, // Performance Scored
+    isActive: true // Active or not
+};
+employee.performanceScore = 33 ; //New Performance Scored
+employee.promotionEligible = employee.performanceScore >= 80 ; //added a new property if the person has a score higher than 80 they are eligble for a promotion
+console.log("New Employee Info", employee); // logging the new performance score for the employee
+
