@@ -26,3 +26,14 @@ employee.performanceScore = 33 ; //New Performance Scored
 employee.promotionEligible = employee.performanceScore >= 80 ; //added a new property if the person has a score higher than 80 they are eligble for a promotion
 console.log("New Employee Info", employee); // logging the new performance score for the employee
 
+// Task 4 Customer Feedback Records
+
+let feedback = [
+    
+    {customerName: "Terry", feedbackText: "Amazing Stuff!", rating: 5 }, //Feedback from terry
+    {customerName: "Jimmy", feedbackText: "Okay quality", rating: 3}, // Feedback from jimmy
+    {customerName: "Mike", feedbackText: "This is terrible", rating: 1}, //feedback from mike
+
+];
+feedback.push({customerName: "Kyle", feedbackText: "Sevice was great!", rating: 5}); // Added feeback from kyle
+console.log("Customer Feedback:", feedback);
