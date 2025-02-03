@@ -37,3 +37,17 @@ let feedback = [
 ];
 feedback.push({customerName: "Kyle", feedbackText: "Sevice was great!", rating: 5}); // Added feeback from kyle
 console.log("Customer Feedback:", feedback);
+ 
+// Task 5 Inventory Management System
+
+let inventory = {
+    itemName: "Jersey", //the name of the item
+    stockCount: 100, // how much of the item is in stock
+    price: 125.99, // how much the item cost
+
+    calculateTotalValue: function(){ 
+        return this.stockCount * this.price;
+    } // A formula to get the total inventory value
+};
+console.log("Inventory details:", inventory); // logging what the inventory is about into the console
+console.log("Total Inventory Value:", inventory.calculateTotalValue()); // logging the formula into the console
